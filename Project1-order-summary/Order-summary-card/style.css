@@ -1,0 +1,136 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+}
+
+body {
+    background-image: url(/images-svgtopng/pattern-background-desktop.png);
+    background-repeat: no-repeat;
+    display: flex;
+    justify-content: center;
+    /* align-content: center; */
+    align-items: center;
+    padding-top: 50px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.container {
+    width: 300px;
+    border: 2px solid rgb(93, 93, 179);
+    border-radius: 10px;
+}
+
+#music-page-hero {
+    max-width: 100%;
+    max-height: 100%;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+    object-fit: cover;
+    margin: 0;
+}
+
+.orderbox {
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    padding: 14px;
+    margin-top: 0;
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+}
+
+.orderbox h2 {
+    text-align: center;
+    padding: 20px;
+}
+
+.orderbox p {
+    text-align: center;
+    font-size: 14px;
+}
+
+.annual-planbox {
+    background-color: rgb(178, 187, 204);
+    display: flex;
+    flex-direction: row;
+    height: 60px;
+    font-size: 14px;
+    align-items: center;
+    margin-bottom: 10px;
+    margin-top: 10px;
+    border-radius: 5px;
+    padding: 10px;
+    /* padding-right: 5px; */
+    justify-content: space-between;
+}
+
+.annual-planbox a {
+    text-decoration: none;
+}
+
+.annual-planbox a:hover {
+    text-decoration: underline;
+}
+
+.annual-planbox p {
+    margin-left: 10px;
+}
+
+.img-annualplan {
+    display: flex;
+    flex-direction: row;
+}
+
+.payment-div {
+    background-color: blue;
+    width: 100%;
+    height: 35px;
+    text-align: center;
+    border-radius: 5px;
+    font-size: 12px;
+    padding-top: 10px;
+    margin-bottom: 10px;
+}
+
+.payment-div:hover {
+    cursor: pointer;
+    background-color: rgb(13, 55, 182);
+    box-shadow: 0 0 10px 0 purple;
+}
+
+.cancel {
+    text-align: center;
+    padding: 5px;
+    font-size: 12px;
+    font-weight: 900;
+    padding-bottom: 10px;
+}
+
+.cancel a {
+    color: slategray;
+    text-decoration: none;
+}
+
+.cancel:hover a{
+    cursor: pointer;
+    color: red;
+}
+
+/* Mobile Responsive */
+@media screen and (max-width: 380px) {
+    body {
+        background-image: url(/images-svgtopng/pattern-background-mobile.png);
+        /* background-repeat: no-repeat;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding-top: 50px;
+        font-family: Arial, Helvetica, sans-serif; */
+    }
+    .container {
+        width: 100%;
+        border: 2px solid red;
+        border-radius: 10px;
+    }
+}

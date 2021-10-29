@@ -1,0 +1,288 @@
+/* * {
+    box-sizing: border-box;
+    margin: 0;
+} */
+
+html {
+    background-image: url(/images/bg-desktop.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    height: 100%;
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: sans-serif;
+}
+
+main {
+    display: flex;
+    /* border: 2px solid red; */
+    margin: auto;
+    margin-top: 10%;
+
+}
+
+.fylo-logo-box {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    width: 250px;
+    height: 200px;
+    margin: 10px;
+    /* padding-top: 100px; */
+    background-color: rgb(27, 27, 139);
+    padding: 20px;
+    border-top-left-radius: 10px;
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+    border-top-right-radius: 70px;
+}
+
+.folder-div {
+    display: flex;
+    align-items: flex-start;
+}
+
+.folder-div > div {
+    display: flex;
+    justify-content: center;
+    width: 40px;
+    height: 40px;
+    background-color: black;
+    margin: 5px;
+    border-radius: 5px;
+}
+
+.folder-div > div:hover {
+    cursor: pointer;
+    opacity: 0.7;
+} 
+
+.folder-div > div img {
+    max-width: 20px;
+    max-height: 20px;
+    margin: auto;
+}
+
+.fylo-data-progress-box {
+    height: 140px;
+    margin: 10px;
+    margin-top: 80px;
+    width: 500px;
+    border-radius: 10px;
+    padding: 15px;
+    /* padding-left: 25px;
+    padding-right: 25px; */
+    color: white;
+    background-color: rgb(27, 27, 139);
+    position: relative;
+}
+
+.progress-bar {
+    width: 100%;
+    height: 15px;
+    /* border: 2px solid greenyellow; */
+    background-color: midnightblue;
+    border-radius: 10px;
+    position: relative;
+}
+
+.progress-bar-box {
+    /* margin-bottom: 15px; */
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+
+.progress-bar-range {
+    width: 75%;
+    height: 80%;
+    background-color: rgb(214, 126, 140);
+    background-image: linear-gradient(to right, rgb(214, 126, 140), rgb(196, 28, 56));
+    border-radius: 10px;
+    border: 2px solid midnightblue;
+    position: relative;
+}
+
+.like-rectangle {
+    width: 150px;
+    height: 50px;
+    text-align: center;
+    /* border-radius: 5px; */
+    /* border: 2px solid green; */
+    padding-top: 20px;
+    background-color: blanchedalmond;
+}
+
+.far-right-triangle {
+    width: 100px;
+    height: 0;
+    border-left:  25px solid transparent;
+    border-right: 25px solid blanchedalmond;
+    border-bottom: 25px solid transparent;
+}
+
+.shape-mix {
+    /* border: 2px solid ; */
+    width: 120px;
+    position: relative;
+    left: 350px;
+    right: 0;
+    top: -165px;
+}
+
+.like-rectangle {
+    border-top-left-radius: 10px;
+    border-bottom-left-radius: 10px;
+    border-top-right-radius: 10px;
+}
+
+.like-rectangle strong {
+    color: black;
+    font-size: 20px;
+}
+
+.like-rectangle span  {
+    color: grey;
+    font-size: 12px;
+}
+
+.dot {
+    width: 11px;
+    height: 11px;
+    background-color: white;
+    position: absolute;
+    border-radius: 50%;
+    left: 363px;
+}
+
+/* for mobile responsiveness screen size 385px */
+@media screen and (max-width: 385px) {
+    body {
+        background-image: url(/images/bg-mobile.png);
+        display: flex;
+        justify-content: center;
+    }
+
+    main {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        /* align-content: center; */
+        /* border: 2px solid red; */
+        margin: 15px;
+        margin-top: 25%;
+        max-width: 80%;
+    
+    }
+
+    main > div {
+        margin: 10px;
+    }
+
+    .fylo-logo-box {
+        max-width: 75%;
+        height: 100px;
+        margin-bottom: 10px;
+    }
+
+    .fylo-data-progress-box {
+        max-width: 80%;
+        height: 130px;
+        margin-top: 5px;
+    }
+
+    .dot {
+        width: 11px;
+        height: 11px;
+        background-color: white;
+        position: absolute;
+        border-radius: 50%;
+        left: 163px;
+    }
+
+    .far-right-triangle {
+        display: none;
+    }
+
+    .shape-mix {
+        /* border: 2px solid ; */
+        width: 120px;
+        position: relative;
+        left: 40px;
+        /* right: 0; */
+        top: 7px;
+    }
+
+    .like-rectangle {
+        border-radius: 10px;
+    }
+}
+
+/* Mobile responsiveness for screen size 750px */
+
+@media screen and (max-width: 500px) {
+    body {
+        background-image: url(/images/bg-mobile.png);
+        display: flex;
+        justify-content: center;
+    }
+
+    main {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        /* align-content: center; */
+        /* border: 2px solid red; */
+        margin: 15px;
+        margin-top: 25%;
+        max-width: 80%;
+    
+    }
+
+    main > div {
+        margin: 10px;
+    }
+
+    .fylo-logo-box {
+        max-width: 75%;
+        height: 100px;
+        margin-bottom: 10px;
+    }
+
+    .fylo-data-progress-box {
+        max-width: 80%;
+        height: 130px;
+        margin-top: 5px;
+    }
+
+    .dot {
+        width: 11px;
+        height: 11px;
+        background-color: white;
+        position: absolute;
+        border-radius: 50%;
+        left: 198px;
+    }
+
+    .far-right-triangle {
+        display: none;
+    }
+
+    .shape-mix {
+        /* border: 2px solid ; */
+        width: 120px;
+        position: relative;
+        left: 60px;
+        /* right: 0; */
+        top: 7px;
+    }
+
+    .like-rectangle {
+        border-radius: 10px;
+    }
+}
